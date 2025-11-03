@@ -1,10 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // output: 'export', // Commented out for development - enable for static export
+  // Configuration pour Netlify
   images: {
     unoptimized: true,
   },
-  trailingSlash: true,
+  // Pas de trailing slash pour Netlify
+  trailingSlash: false,
 }
 
 module.exports = nextConfig
